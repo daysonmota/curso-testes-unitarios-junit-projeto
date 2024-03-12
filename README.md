@@ -2,7 +2,7 @@
 
 # Sobre o projeto
 
-JUnit é um framework de teste unitário para a linguagem de programação Java. Ele fornece uma estrutura para escrever, organizar e executar testes automatizados em código Java.
+O curso de JUnit, desenvolvido pela <a url="https://github.com/algaworks/curso-testes-unitarios-junit">algaworks</a>, tem como objetivo demostrar exemplos práticos e eficazes de como realizar testes unitários de qualidade, capacitando desenvolvedores a escrever testes eficiente que garantam a robustez e confiabilidade de seus sistema.
 
 
 # Tecnologias utilizadas
