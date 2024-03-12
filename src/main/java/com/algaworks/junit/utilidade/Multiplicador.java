@@ -11,7 +11,7 @@ public enum Multiplicador {
         this.multiplicador = multiplicador;
     }
 
-    Double aplicarMultiplicador(Double valor) {
+     Double aplicarMultiplicador(Double valor) {
         if (valor == null || valor == 0) {
             return 0.0;
         }

@@ -12,8 +12,7 @@ public class CalculadoraGanhos {
     private final ProcessadorTexto processadorTexto;
     private final BigDecimal bonusPremium;
 
-    public CalculadoraGanhos(ProcessadorTexto processadorTexto,
-                             BigDecimal bonusPremium) {
+    public CalculadoraGanhos(ProcessadorTexto processadorTexto, BigDecimal bonusPremium) {
         Objects.requireNonNull(processadorTexto);
         Objects.requireNonNull(bonusPremium);
         this.processadorTexto = processadorTexto;
@@ -25,8 +24,9 @@ public class CalculadoraGanhos {
         Editor autor = post.getAutor();
         Objects.requireNonNull(autor);
 
-        BigDecimal valorPagoPorPalavra = autor.getValorPagoPorPalavra();
         int quantidadePalavras = processadorTexto.quantidadePalavras(post.getConteudo());
+
+        BigDecimal valorPagoPorPalavra = autor.getValorPagoPorPalavra();
         BigDecimal totalGanho = valorPagoPorPalavra.multiply(BigDecimal.valueOf(quantidadePalavras));
 
         if (post.getAutor().isPremium()) {
